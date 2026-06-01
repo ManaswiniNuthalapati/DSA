@@ -97,6 +97,7 @@ low > high
 ↓
 Search space is empty.
 Stop.
+
 '''
 
 
