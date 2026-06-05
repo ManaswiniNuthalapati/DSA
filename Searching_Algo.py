@@ -107,7 +107,16 @@ class Solution:
             if nums[i]==maxi:
                 return i
         
-
+# Find Target Indices after sorted array
+class Solution:
+    def targetIndices(self, nums, target):
+        nums=sorted(nums)
+        res=[]
+        for i in range(len(nums)):
+            if nums[i]==target:
+                res.append(i)
+        return res
+        
 
 
     
