@@ -99,7 +99,14 @@ Search space is empty.
 Stop.
 
 '''
-
+# FInd Peak Element
+class Solution:
+    def findPeakElement(self, nums):
+        maxi=max(nums)
+        for i in range(len(nums)):
+            if nums[i]==maxi:
+                return i
+        
 
 
 
