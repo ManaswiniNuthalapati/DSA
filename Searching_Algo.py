@@ -131,5 +131,10 @@ class Solution:
         return count 
 
 # Search in Rotated Sorted Array
-
-    
+class Solution:
+    def search(self, nums,target):
+        for i in range(len(nums)):
+            if nums[i] == target:
+                return True
+        return False
+        
