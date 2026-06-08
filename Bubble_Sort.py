@@ -12,7 +12,12 @@ Bubble Sort Algorithm
 --> Continue till end of array.
 --> Repeat passes until array becomes sorted.
 '''
-
+'''
+Why n-i-1?
+for j in range(n-i-1):
+After each pass, one largest element reaches its correct position.
+No need to compare it again.
+'''
 
 # Sort the Colors ---> LC 75
 class Solution:
