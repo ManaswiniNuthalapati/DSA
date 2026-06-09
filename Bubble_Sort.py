@@ -21,3 +21,24 @@ for i in range(len(new_nums)):
   if new_nums[i]!=nums[i]:
     count+=1
 print(count)
+
+# Given an array arr, determine whether its elements can be rearranged so that the difference between every pair
+# of consecutive elements is the same.
+'''
+Ex: 
+Input: arr = [3,5,1]
+Output: true
+Explanation: We can reorder the elements as [1,3,5] or [5,3,1] with differences 2 and -2 respectively, between each consecutive elements.
+'''
+class Solution:
+    def canMakeArithmeticProgression(self, arr):
+        n=len(arr)
+        for i in range(n):
+            for j in range(n-i-1):
+                if arr[j]>arr[j+1]:
+                    arr[j],arr[j+1]=arr[j+1],arr[j]
+        diff=arr[0]-arr[1]
+        for i in range(n-1):
+            if arr[i]-arr[i+1]!=diff:
+                return False
+        return True
