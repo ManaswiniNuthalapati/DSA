@@ -1,4 +1,20 @@
-# Sort the Colors
+'''
+What is Bubble Sort?
+Bubble Sort is the simplest sorting algorithm that repeatedly compares adjacent elements and 
+swaps them if they are in the wrong order.
+'''
+'''
+Bubble Sort Algorithm
+
+--> Start from first element.
+--> Compare adjacent elements.
+--> Swap if left element is greater.
+--> Continue till end of array.
+--> Repeat passes until array becomes sorted.
+'''
+
+
+# Sort the Colors ---> LC 75
 class Solution:
     def sortColors(self, nums):
         n=len(nums)
@@ -8,7 +24,7 @@ class Solution:
                     nums[j],nums[j+1]=nums[j+1],nums[j]
         return nums
     
-# Sort the array and count how many indices have different values compared to the original array.
+# Sort the array and count how many indices have different values compared to the original array. ---> LC 1051
 nums = [1,1,4,2,1,3]
 new_nums = nums[:]
 n = len(new_nums)
@@ -23,7 +39,7 @@ for i in range(len(new_nums)):
 print(count)
 
 # Given an array arr, determine whether its elements can be rearranged so that the difference between every pair
-# of consecutive elements is the same.
+# of consecutive elements is the same. ---> LC 1502
 '''
 Ex: 
 Input: arr = [3,5,1]
