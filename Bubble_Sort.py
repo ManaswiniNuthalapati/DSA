@@ -63,3 +63,12 @@ class Solution:
             if arr[i]-arr[i+1]!=diff:
                 return False
         return True
+
+# Sort the array from largest to smallest
+arr=[5,7,1,4,9]
+n = len(arr)
+for i in range(n):
+    for j in range(n-i-1):
+        if arr[j] < arr[j+1]:
+            arr[j], arr[j+1] = arr[j+1], arr[j]
+print(arr)
