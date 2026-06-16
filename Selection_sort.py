@@ -23,3 +23,13 @@ def selection_sort_desc(arr):
     return arr
 arr = [64, 25, 12, 22, 11]
 print(selection_sort_desc(arr))
+
+# Find Minimum Element
+def find_min(arr):
+    min_ele = arr[0]
+    for i in range(1, len(arr)):
+        if arr[i] < min_ele:
+            min_ele = arr[i]
+    return min_ele
+arr = [8, 3, 6, 1, 9]
+print(find_min(arr))
