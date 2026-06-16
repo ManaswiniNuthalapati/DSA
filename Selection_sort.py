@@ -33,3 +33,13 @@ def find_min(arr):
     return min_ele
 arr = [8, 3, 6, 1, 9]
 print(find_min(arr))
+
+# Find Maximum Element
+def find_max(arr):
+    max_ele = arr[0]
+    for i in range(1, len(arr)):
+        if arr[i] > max_ele:
+            max_ele = arr[i]
+    return max_ele
+arr = [8, 3, 6, 1, 9]
+print(find_max(arr))
