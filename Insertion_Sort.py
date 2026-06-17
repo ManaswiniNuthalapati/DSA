@@ -1,4 +1,4 @@
-Insertion Sort Code
+# Insertion Sort Code
 def insertion_sort(arr):
     n = len(arr)
     for i in range(1, n):
