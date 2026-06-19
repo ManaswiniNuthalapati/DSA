@@ -43,3 +43,4 @@ def find_max(arr):
     return max_ele
 arr = [8, 3, 6, 1, 9]
 print(find_max(arr))
+
