@@ -34,3 +34,4 @@ def is_sorted(arr):
     return True
 print(is_sorted([1, 2, 3, 4]))
 print(is_sorted([4, 2, 3, 1]))
+

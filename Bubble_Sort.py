@@ -72,3 +72,5 @@ for i in range(n):
         if arr[j] < arr[j+1]:
             arr[j], arr[j+1] = arr[j+1], arr[j]
 print(arr)
+
+# Count Swaps
