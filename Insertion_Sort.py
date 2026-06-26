@@ -49,3 +49,4 @@ for i in range(1,n):
     arr[j+1]=key
 print(arr)
 print(c)
+
