@@ -41,3 +41,18 @@ Algorithm
 12)  Return the merged sorted array.
 '''
 # Time Complexity
+'''
+--> Best Case
+    O(n log n)
+        Even if the array is already sorted, Merge Sort still divides and merges all elements.
+--> Average Case
+    O(n log n)
+--> Worst Case
+    O(n log n)
+'''
+# Space Complexity
+'''
+O(n)
+    Why?
+    Merge Sort creates temporary arrays while merging.
+'''
