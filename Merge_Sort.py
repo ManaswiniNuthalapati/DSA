@@ -87,3 +87,5 @@ def merge(left,right):
     return result
 arr=[6,2,8,5]
 print(merge_sort(arr))
+
+# Merge two sorted Arrays
