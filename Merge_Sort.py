@@ -58,7 +58,7 @@ O(n)
 '''
 # Problems
 
-# MErge Sort Code
+# Merge Sort Code
 def merge_sort(arr):
     if len(arr)<=1:
         return arr
