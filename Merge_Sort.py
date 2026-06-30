@@ -89,3 +89,36 @@ arr=[6,2,8,5]
 print(merge_sort(arr))
 
 # Merge two sorted Arrays
+class Solution:
+    def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
+        arr=nums1[:m]+nums2[:n]
+        arr=self.mergesort(arr)
+        for i in range(m+n):
+            nums1[i]=arr[i]
+
+    def mergesort(self,arr):
+        if len(arr)<=1:
+            return arr
+        mid=len(arr)//2
+        left=self.mergesort(arr[:mid])
+        right=self.mergesort(arr[mid:])
+        return self.mergearr(left,right)
+        
+    def mergearr(self,left,right):
+        res=[]
+        i=0
+        j=0
+        while i<len(left) and j<len(right):
+            if left[i]<right[j]:
+                res.append(left[i])
+                i+=1
+            else:
+                res.append(right[j])
+                j+=1
+        while i<len(left):
+            res.append(left[i])
+            i+=1
+        while j<len(right):
+            res.append(right[j])
+            j+=1
+        return res
