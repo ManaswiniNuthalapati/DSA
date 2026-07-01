@@ -90,7 +90,7 @@ print(merge_sort(arr))
 
 # Merge two sorted Arrays
 class Solution:
-    def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
+    def merge(self,nums1,nums2,m,n):
         arr=nums1[:m]+nums2[:n]
         arr=self.mergesort(arr)
         for i in range(m+n):
