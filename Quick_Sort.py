@@ -18,7 +18,7 @@ Recursively sort the right subarray.
 Stop when the subarray has one or zero elements.
 '''
 
-Time Complexity
+# Time Complexity
 '''
 Best Case  -  O(n log n)
 
