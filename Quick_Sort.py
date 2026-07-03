@@ -49,7 +49,7 @@ O(n)
 Reason - Recursion depth becomes n.
 '''
 
-# Quick Sort Lomuto Partition
+# Quick Sort Lomuto Partition [ CHOOSING LAST ELEMENT AS PIVOT]
 def partition(arr, low, high):
     pivot = arr[high]
     i = low - 1
