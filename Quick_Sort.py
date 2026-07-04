@@ -70,7 +70,7 @@ arr = [8, 3, 1, 7, 0, 10, 2]
 quickSort(arr, 0, len(arr) - 1)
 print(arr)
 
-# Hoare Partition
+# Hoare Partition [CHOOSING FIRST ELEMENT AS PIVOT]
 def partition(arr, low, high):
     pivot = arr[low]
     i = low + 1
