@@ -69,3 +69,5 @@ def quickSort(arr, low, high):
 arr = [8, 3, 1, 7, 0, 10, 2]
 quickSort(arr, 0, len(arr) - 1)
 print(arr)
+
+# Hoare Partition
