@@ -71,3 +71,28 @@ quickSort(arr, 0, len(arr) - 1)
 print(arr)
 
 # Hoare Partition
+def partition(arr, low, high):
+    pivot = arr[low]
+    i = low + 1
+    j = high
+    while True:
+        while i <= high and arr[i] <= pivot:
+            i += 1
+        while j >= low and arr[j] > pivot:
+            j -= 1
+        if i < j:
+            arr[i], arr[j] = arr[j], arr[i]
+        else:
+            break
+    arr[low], arr[j] = arr[j], arr[low]
+    return j
+
+def quickSort(arr, low, high):
+    if low < high:
+        pivot_index = partition(arr, low, high)
+        quickSort(arr, low, pivot_index - 1)
+        quickSort(arr, pivot_index + 1, high)
+
+arr = [8, 3, 1, 7, 0, 10, 2]
+quickSort(arr, 0, len(arr) - 1)
+print(arr)
