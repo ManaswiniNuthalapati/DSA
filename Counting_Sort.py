@@ -1,5 +1,73 @@
-# Counting Sort
+                # Counting Sort
+# 1. Definition
+'''
+Counting Sort is a non-comparison based sorting algorithm that sorts elements by counting the frequency of each element instead of comparing them.
+It works efficiently when the range of input values is small.
+'''
+# Algorithm
+'''
+Find the largest element in the array.
+Create a count array of size (maximum + 1) and initialize all elements with 0.
+Traverse the input array and count how many times each element appears.
+Create an empty result array.
+Traverse the count array from index 0 to the maximum value.
+Add each element to the result array according to its frequency.
+Repeat until the frequency of every element becomes 0.
+Return or print the sorted array.
+Stop the algorithm.
+'''
 
+# Counting Sort Complexities
+'''
+1. Best Case Time Complexity - O(n + k)
+Reason
+We traverse the input array once to count the frequencies → O(n).
+We traverse the count array once to rebuild the sorted array → O(k).
+So,
+O(n) + O(k) = O(n + k)
+Scenario
+Even if the array is already sorted, Counting Sort still:
+Counts the frequencies.
+Traverses the count array.
+
+Average Case Time Complexity - O(n + k)
+Reason
+Whether the elements are randomly arranged or not, Counting Sort:
+Counts the frequencies.
+Traverses the count array.
+Scenario
+Random input.
+
+Worst Case Time Complexity - O(n + k)
+Reason
+Even if the array is reverse sorted, Counting Sort:
+Counts every element once.
+Traverses the complete count array once.
+It never performs extra comparisons or swaps.
+Scenario
+Reverse sorted input.
+'''
+
+# Space Complexity - O(k)
+'''
+Reason
+Counting Sort creates an extra count array of size
+'''
+
+# Advantages
+'''
+Fast for integers with a small range of values.
+Does not compare elements.
+Easy to implement.
+Time complexity is O(n + k).
+'''
+# Disadvantages
+'''
+Works only for integer values.
+Uses extra memory for the count array.
+Not efficient when the range of values is very large.
+Not stable (simple implementation).
+'''
 
 # Sort Colors
 arr = [2,0,2,1,1,0]
