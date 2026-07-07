@@ -116,7 +116,7 @@ print(output)
 
 # Uncommon words from two Sentences
 class Solution:
-    def uncommonFromSentences(self, s1: str, s2: str) -> List[str]:
+    def uncommonFromSentences(self,s1,s2):
         freq = {}
         words1 = s1.split()
         words2 = s2.split()
