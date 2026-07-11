@@ -70,6 +70,19 @@ arr = [8, 3, 1, 7, 0, 10, 2]
 quickSort(arr, 0, len(arr) - 1)
 print(arr)
 
+# Lomuto Algorithm
+'''
+Choose the last element as the pivot.
+Initialize i = low - 1.
+Traverse the array from low to high - 1 using j.
+If arr[j] < pivot:
+Increment i.
+Swap arr[i] and arr[j].
+After the loop, swap arr[i + 1] with the pivot (arr[high]).
+Return i + 1, which is the pivot's final sorted position.
+'''
+
+
 # Hoare Partition [CHOOSING FIRST ELEMENT AS PIVOT]
 def partition(arr, low, high):
     pivot = arr[low]
