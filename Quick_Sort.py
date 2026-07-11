@@ -82,7 +82,6 @@ After the loop, swap arr[i + 1] with the pivot (arr[high]).
 Return i + 1, which is the pivot's final sorted position.
 '''
 
-
 # Hoare Partition [CHOOSING FIRST ELEMENT AS PIVOT]
 def partition(arr, low, high):
     pivot = arr[low]
