@@ -26,4 +26,6 @@ else:
     else:
         print("Prime Number")
 
-# Array Rotation
+# Find Maximum and Minimum in an Array
+arr=[]
+

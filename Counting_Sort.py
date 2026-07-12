@@ -30,4 +30,16 @@ for i in range(len(heights)):
     if heights[i]==res[i]:
         count+=1
 print(count)
-        
+       
+arr=[4,2,2,8,1,1,3]
+max_val=max(arr)
+count=[0]*(max_val+1)
+for num in arr:
+    count[num]+=1
+for i in range(1,len(count)):
+    count[i]+=count[i-1]
+output=[0]*len(arr)
+for i in reversed(arr):
+    output[count[i]-1]=i
+    count[i]-=1
+print(output)
