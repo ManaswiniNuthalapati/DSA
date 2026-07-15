@@ -76,7 +76,7 @@ class Solution:
             right-=1
         return maxi
         
-# Find Matching Character From Both Ennds
+# Find Matching Character From Both Ends
     def firstMatchingIndex(self, s):
         i=0
         j=len(s)-1
