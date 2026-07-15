@@ -76,3 +76,14 @@ class Solution:
             right-=1
         return maxi
         
+# Find Matching Character From Both Ennds
+    def firstMatchingIndex(self, s):
+        i=0
+        j=len(s)-1
+        while i<=j:
+            if s[i]==s[j]:
+                return i
+            i+=1
+            j-=1
+        return -1
+                
