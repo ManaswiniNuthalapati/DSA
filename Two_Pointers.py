@@ -88,7 +88,6 @@ class Solution:
         return -1
                 
 # Is Subsequence
-class Solution:
     def isSubsequence(self, s: str, t: str) -> bool:
         i=0
         j=0
