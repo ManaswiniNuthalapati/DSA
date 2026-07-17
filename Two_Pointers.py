@@ -101,7 +101,7 @@ class Solution:
             return True
         return False
     
-# 
+# GCD of Odd and Even Numbers
     def gcd(self,a,b):
         if b==0:
             return a
