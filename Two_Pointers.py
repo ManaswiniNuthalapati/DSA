@@ -100,3 +100,18 @@ class Solution:
         if i==len(s):
             return True
         return False
+    
+# 
+    def gcd(self,a,b):
+        if b==0:
+            return a
+        return self.gcd(b, a % b)
+    def gcdOfOddEvenSums(self, n: int) -> int:
+        O_sum=0
+        E_sum=0
+        for i in range(1,n+1):
+            O_sum+=2*i-1
+            E_sum+=2*i
+        return self.gcd(O_sum,E_sum)
+    
+    
