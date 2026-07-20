@@ -16,3 +16,16 @@ Update the answer (maximum, minimum, count, average, etc.).
 Repeat Steps 4–6 until all windows are processed.
 Return the final answer.
 '''
+
+# Maximum Average Subarray
+class Solution:
+    def findMaxAverage(nums,k):
+        total=sum(nums[:k])
+        maxi=total
+        for i in range(k,len(nums)):
+            total+=nums[i]
+            total-=nums[i-k]
+            maxi=max(maxi,total)
+        return maxi/k
+
+        
