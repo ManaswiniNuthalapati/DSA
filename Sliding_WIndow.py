@@ -16,6 +16,17 @@ Update the answer (maximum, minimum, count, average, etc.).
 Repeat Steps 4–6 until all windows are processed.
 Return the final answer.
 '''
+# Code Template of Sliding Window
+'''
+def sliding_window(arr, k):
+    window = sum(arr[:k])
+    answer = window
+    for i in range(k, len(arr)):
+        window -= arr[i - k]
+        window += arr[i]
+        answer = max(answer, window)   
+    return answer
+    '''
 
 # Maximum Average Subarray
 class Solution:
