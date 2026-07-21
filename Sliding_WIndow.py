@@ -39,4 +39,4 @@ class Solution:
             maxi=max(maxi,total)
         return maxi/k
 
-        
+# Maximum Sum of K Consecutive Elements
