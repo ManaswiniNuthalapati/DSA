@@ -1,0 +1,18 @@
+# Sieve's Algorithm
+
+# Definition
+'''
+The Sieve of Eratosthenes is an algorithm used to find all prime numbers from 2 up to a given number (N) in an efficient way.
+Instead of checking each number one by one to see if it is prime, the algorithm removes (marks) all multiples of prime numbers. 
+After removing all composite numbers, the numbers that remain are the prime numbers.
+'''
+
+# Main Idea
+'''
+The algorithm starts with the smallest prime number, 2.
+Mark all multiples of 2 as not prime.
+Move to the next number that is still not marked (which will be 3).
+Mark all multiples of 3 as not prime.
+Continue the same process for the remaining prime numbers.
+At the end, the numbers that are not marked are the prime numbers.
+'''
